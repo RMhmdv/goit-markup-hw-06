@@ -272,9 +272,8 @@ img {
     color: var(--white-color);
     background-color: var(--accent-color);
     
-    
-
     font-family: inherit;
+    font-weight: bold;
     font-size: 16px;
     line-height: 1.88;
 
