@@ -1036,3 +1036,9 @@ img {
     line-height: 1.88;
     text-align: left;
 }
+
+/* Portfolio styles */
+
+.page-header.contacts {
+    border-bottom: 1px solid var(--border-color-main);
+}
