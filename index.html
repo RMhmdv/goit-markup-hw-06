@@ -45,7 +45,7 @@
             <section class="hero overlay">
                 <!-- Hero -->
                 <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-                <a href="#" class="button">Заказать услугу</a> 
+                <button class="btn" data-modal-open>Заказать услугу</button> 
 
             </section>
             
@@ -332,14 +332,46 @@
             </section>
             
                             <!-- Modal window -->
-                            <div class="backdrop">
+                            <div class="backdrop is-hidden" data-modal>
                                 <div class="modal">
                                     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             
                                     <form>
+
+                                        <div class="form-field">
+                                            <label for="name" class="form-label">Имя</label>
+                                            <input class="form-input" type="text" name="Name" id="name">
+                                        </div>
+
+                                        <div class="form-field">
+                                            <label for="tel" class="form-label">Телефон</label>
+                                            <input class="form-input" type="tel" name="Tel" id="tel">
+                                        </div>
+
+                                        <div class="form-field">
+                                            <label for="mail" class="form-label">Почта</label>
+                                            <input class="form-input" type="email" name="Mail" id="mail">
+                                        </div>
+
+                                        <div class="form-field comm">
+                                            <label for="comment" class="form-label">Комментарий</label>
+                                            <textarea class="form-input comment" name="" id="comment" cols="30" rows="10"></textarea>
+                                        </div>
+
+                                        <div class="form-field check">
+                                            <input type="checkbox" name="Check" id="checkbox" class="check">
+                                            <label for="checkbox" class="form-label">Соглашаюсь с рассылкой и принимаю 
+                                            <a href="#" class="dogovor">Условия договора</a></label>  
+                                        </div>
+
+                                        <button type="submit"  class="btn send">Отправить</button>
             
                                     </form>
-                                    <button class="button">Отправить</button>
+
+                                                            
+                                    
+
+                                    <button data-modal-close></button>
             
             
                                 </div>
@@ -396,7 +428,7 @@
                     <b class="join">подпишитесь на рассылку</b>
                     <form class="mailing-form">
                         <input class="input-place" type="email" placeholder="E-mail" name="E-mail" required="">  
-                        <button class="button submit" type="submit">
+                        <button class="btn submit" type="submit">
                             Подписаться 
                             <svg class="submit-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-send"></use>
@@ -412,6 +444,8 @@
             </div>
 
     </footer>
+
+    <script src="./js/modal.js"></script>
     
 </body>
 </html>

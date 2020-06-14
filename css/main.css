@@ -258,7 +258,7 @@ img {
 }
 /* Button */
 
-.button {
+.btn {
     
     display: inline-flex;
     min-width: 200px;
@@ -310,23 +310,36 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
+.backdrop.is-hidden {
+    opacity: 1;
+    /* pointer-events: none; */
+}
 
 .modal {
+
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    text-align: center;
 
-    background: #FFFFFF;
+    background-color: var(--white-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
 }
 
 .modal-title {
+
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -335,7 +348,67 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color:var(--title-text-color);
+    color: var(--title-text-color);
+
+}
+
+.form-field {
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 28px;
+
+}
+
+.form-field.comm {
+
+    margin-bottom: 20px;
+
+}
+
+.form-field.check {
+
+    margin-bottom: 30px;
+
+}
+
+.btn.send {
+
+    display: inline-flex;
+
+    padding-left: 55px;
+    padding-right: 55px;
+
+}
+
+.form-input {
+
+    display: inline-block;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+.form-input.comment {
+    
+    height: 120px;
+}
+
+.check {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+.dogovor {
+    color: var(--accent-color);
 
 }
 
@@ -674,7 +747,7 @@ img {
 .mailing-form {
     display: flex;
 }
-.button.submit {
+.btn.submit {
     display: inline-flex;
     font-weight: 900;
     letter-spacing: 0.06em;
@@ -741,7 +814,7 @@ img {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
-.button.primary {
+.btn.primary {
 
     position: relative;
     color: var(--title-text-color);
