@@ -193,15 +193,6 @@ img {
 
 }
 
-/* .contact-info__link:hover,
-.contact-info__link:focus,
-.contact-info__link:active .icon-letter,.icon-phone {
-
-    transform: scale(1.25);
-} */
-
-
-
 /* Hero */
 
 .hero {
@@ -373,13 +364,19 @@ img {
 
 }
 
+/* .form {
+
+    width: 528px;
+    height: 581px;
+
+} */
 
 
 .form-field {
 
     position: relative;
 
-    display: flex;
+    display: block;
     width: 100%;
     margin-bottom: 28px;
 
@@ -388,12 +385,6 @@ img {
 .form-field.comm {
 
     margin-bottom: 20px;
-
-}
-
-.form-field.check {
-
-    margin-bottom: 30px;
 
 }
 
@@ -451,20 +442,67 @@ img {
 
 }
 
-.check {
+.policy {
+
+    display: flex;
 
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
 
     color: var(--primary-text-color);
 }
-.dogovor {
+
+.terms {
+
+    display: block; 
+    margin-left: 5px;
+    text-decoration: underline;
+    text-align: right;
     color: var(--accent-color);
 
 }
+
+.check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.icon-check {
+
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+  
+    border: 2px solid var(--title-text-color);
+    background-color: var(--white-color);
+    border-radius: 2px;
+  
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.check:checked  + .icon-check {
+
+    background-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-size: cover;
+    border-radius: 2px;
+    border-color: var(--accent-color);
+    background-origin: border-box;
+
+  }
 
 .icon-input {
     position: absolute;
